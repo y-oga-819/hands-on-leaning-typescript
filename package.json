@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/y-oga-819/hands-on-leaning-typescript#readme",
   "devDependencies": {
+    "@types/node": "^20.5.7",
     "typescript": "^5.2.2"
   }
 }
