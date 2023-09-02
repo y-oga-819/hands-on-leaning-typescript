@@ -8,3 +8,7 @@ build:
 start:
 	npm run build
 	npm run start
+
+.PHONY: test
+test:
+	yarn jest
