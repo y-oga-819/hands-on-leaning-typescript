@@ -18,6 +18,15 @@ class HitAndBlow {
     tryCount = 0
 
     setting() {
+        const answerLength = 3
+
+        while(this.answer.length < answerLength) {
+            const randNum = Math.floor(Math.random() * this.answerSource.length)
+            const selectedItem = this.answerSource[randNum]
+            if (!this.answer.includes(selectedItem)) {
+                this.answer.push(selectedItem)
+            }
+        }
     }
 }
 
