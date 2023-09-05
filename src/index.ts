@@ -13,15 +13,9 @@ const promptInput = async (text: string) => {
 }
 
 class HitAndBlow {
-    answerSource!: string[]
-    answer!: string[]
-    tryCount: number
-
-    constructor() {
-        this.answerSource = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
-        this.answer = []
-        this.tryCount = 0
-    }
+    answerSource: string[] = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+    answer: string[] = []
+    tryCount: number = 0
 }
 
 ;(async() => {
