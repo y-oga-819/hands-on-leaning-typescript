@@ -16,6 +16,9 @@ class HitAndBlow {
     answerSource = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
     answer: string[] = []
     tryCount = 0
+
+    setting() {
+    }
 }
 
 ;(async() => {
@@ -28,4 +31,5 @@ class HitAndBlow {
     process.exit()
 
     const hitAndBlow = new HitAndBlow()
+    hitAndBlow.setting()
 })()
