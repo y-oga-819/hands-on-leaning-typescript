@@ -28,9 +28,14 @@ class HitAndBlow {
             }
         }
     }
+
+    async play() {
+        const inputArr = (await promptInput('「,」区切りで3つの数字を入寮してください')).split(',')
+    }
 }
 
 ;(async() => {
     const hitAndBlow = new HitAndBlow()
     hitAndBlow.setting()
+    hitAndBlow.play()
 })()
