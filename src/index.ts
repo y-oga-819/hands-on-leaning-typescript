@@ -31,6 +31,25 @@ class HitAndBlow {
 
     async play() {
         const inputArr = (await promptInput('「,」区切りで3つの数字を入寮してください')).split(',')
+        const result = this.check(inputArr)
+    }
+
+    check(inputArr: string[]) {
+        let hitCount = 0
+        let blowCount = 0
+
+        inputArr.forEach((val, index) => {
+            if (val === this.answer[index]) {
+                hitCount++
+            } else if (this.answer.includes(val)) {
+                blowCount++
+            }
+        })
+
+        return {
+            hitCount,
+            blowCount,
+        }
     }
 }
 
